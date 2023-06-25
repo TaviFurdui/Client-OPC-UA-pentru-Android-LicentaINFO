@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:licenta="clr-namespace:Licenta"
+             xmlns:viewmodels="clr-namespace:Licenta.ViewModels"
+             x:Class="Licenta.Views.Connected">
+    <ContentPage.BindingContext>
+        <viewmodels:ConnectedViewModel></viewmodels:ConnectedViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid RowDefinitions="auto, auto, *, auto">
+            <Label
+                Grid.Row="0"
+                Margin="0, 80, 0, 0"
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="#7DC1E7"
+                Text="{Binding connectedText}"
+                TextType="Html"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"/>
+            <Label
+                Grid.Row="1"
+                FontSize="16"
+                FontAttributes="Bold"
+                TextColor="#8D9BA6"
+                Text="{Binding ipInfoText}"
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"/>
+            <Frame
+                Grid.Row="2"
+                CornerRadius="100"
+                WidthRequest="150"
+                HeightRequest="150"
+                HasShadow="True"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                BackgroundColor="#E9F0F3">
+                <Frame
+                    Grid.Row="2"
+                    CornerRadius="100"
+                    WidthRequest="75"
+                    HeightRequest="75"
+                    HasShadow="True"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#FFFFFF">
+                    <ImageButton 
+                        BackgroundColor="#FFFFFF"
+                        Command="{Binding RedirectToMainPage}">
+                        <ImageButton.Source>
+                            <FontImageSource
+                                Color="#7DC1E7"
+                                Glyph="&#x23fb;"
+                                FontFamily="FontAwesome"
+                                Size="44" />
+                        </ImageButton.Source>
+                    </ImageButton>
+                </Frame>
+            </Frame>
+            <Label
+                Margin="50, 0, 50, 100"
+                Grid.Row="3"
+                FontSize="16"
+                FontAttributes="Bold"
+                TextColor="#8D9BA6"
+                Text="Press the button to disconnect from the server"
+                HorizontalOptions="CenterAndExpand"
+                TextType="Html"
+                HorizontalTextAlignment="Center"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

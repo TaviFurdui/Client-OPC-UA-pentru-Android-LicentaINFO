@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:Licenta.ViewModels" xmlns:microcharts1="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             x:Class="Licenta.Views.Chart">
+    <ContentPage.BindingContext>
+        <viewmodels:ChartViewModel></viewmodels:ChartViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <FlexLayout
+                Margin="0,30,0,0"
+                Direction="Row"
+                AlignContent="Center"
+                JustifyContent="SpaceBetween">
+                <Label
+                    VerticalTextAlignment="Center"
+                    FontSize="Title"
+                    Text="{Binding ItemToChart}"
+                    TextColor="#7DC1E7"
+                    Margin="10,10,20,0"/>
+            </FlexLayout>
+            <Line
+                HeightRequest="10"
+                BackgroundColor="#7DC1E7"
+                Margin="0,10,0,10"/>
+            <Grid
+                RowDefinitions="*"
+                ColumnDefinitions="*"
+                HeightRequest="500">
+                <microcharts1:ChartView Chart="{Binding ChartData}" Grid.Column="0" Grid.Row="0"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

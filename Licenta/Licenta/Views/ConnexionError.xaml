@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Licenta.ViewModels"
+             x:Class="Licenta.Views.ConnexionError">
+    <ContentPage.BindingContext>
+        <viewmodels:ConnexionErrorViewModel></viewmodels:ConnexionErrorViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid RowDefinitions="auto, auto, auto, auto">
+            <Label
+                Grid.Row="0"
+                FontSize="30"
+                Margin="0, 80, 0, 0"
+                FontAttributes="Bold"
+                TextColor="#7DC1E7"
+                Text="{Binding ErrorText}"
+                HorizontalOptions="CenterAndExpand"
+                TextType="Html"
+                HorizontalTextAlignment="Center"/>
+            <Image
+                Margin="0, 20, 0, 0"
+                Grid.Row="1"
+                Source="DogError.png"
+                HorizontalOptions="CenterAndExpand"/>
+            <Label
+                Margin="0, 20, 0, 0"
+                Grid.Row="2"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="#8D9BA6"
+                Text="{Binding ErrorInfo}"
+                HorizontalOptions="CenterAndExpand"
+                TextType="Html"
+                HorizontalTextAlignment="Center"/>
+            <Button
+                Grid.Row="4"
+                Text="Try Again"
+                Command="{Binding RedirectToAddNewConnexion}"
+                BackgroundColor="#7DC1E7"
+                TextColor="#FFFFFF"
+                CornerRadius="20"
+                WidthRequest="120"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

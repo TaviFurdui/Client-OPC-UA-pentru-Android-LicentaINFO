@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:Licenta.ViewModels"
+             xmlns:model="clr-namespace:Licenta.Models"
+             x:Class="Licenta.Views.Events">
+    <ContentPage.BindingContext>
+        <viewmodels:EventsViewModel></viewmodels:EventsViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ListView
+            BackgroundColor="Transparent"
+            ItemsSource="{Binding EventItem}"
+            HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="model:EventModel">
+                    <ViewCell>
+                        <Grid
+                            Padding="10" 
+                            ColumnDefinitions="auto, *"
+                            BackgroundColor="White">
+                            <Frame
+                                BackgroundColor="{Binding Color}"
+                                Grid.Column="0">
+                                <Label 
+                                    FontSize="Large"
+                                    Padding="10" 
+                                    HorizontalTextAlignment="Center"
+                                    VerticalTextAlignment="Center"
+                                    Text="{Binding Severity}">
+                                </Label>
+                            </Frame>
+                            <Grid
+                                Grid.Column="1"
+                                RowDefinitions="auto,auto,auto">
+                                <Label 
+                                    FontSize="Large"
+                                    VerticalTextAlignment="Center"
+                                    Grid.Row="0"
+                                    Text="{Binding Message}">
+                                </Label>
+                                <Label 
+                                    FontSize="Medium"
+                                    VerticalTextAlignment="Center"
+                                    Grid.Row="1"
+                                    Text="{Binding EventType}">
+                                </Label>
+                                <Label 
+                                    FontSize="Medium"
+                                    VerticalTextAlignment="Center"
+                                    Grid.Row="2"
+                                    Text="{Binding DateTime}">
+                                </Label>
+                            </Grid>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

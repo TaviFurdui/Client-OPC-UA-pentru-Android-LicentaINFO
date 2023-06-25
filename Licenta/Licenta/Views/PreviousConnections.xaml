@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:model="clr-namespace:Licenta.Models"
+             xmlns:viewmodels="clr-namespace:Licenta.ViewModels"
+             x:Class="Licenta.Views.PreviousConnections">
+    <ContentPage.BindingContext>
+        <viewmodels:PreviousConnectionsViewModel></viewmodels:PreviousConnectionsViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid
+            RowDefinitions="*, *">
+            <ListView
+                Grid.Row="0"
+                BackgroundColor="Transparent"
+                ItemsSource="{Binding PreviousConnectionItem}"
+                HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="model:PreviousConnectionModel">
+                        <ViewCell>
+                            <Grid
+                                Padding="10" 
+                                ColumnDefinitions="*, auto, auto, auto"
+                                RowDefinitions="*, *"
+                                BackgroundColor="White">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                        Command="{Binding ItemTapped}"
+                                        CommandParameter="{Binding ServerIP}"/>
+                                </Grid.GestureRecognizers>
+                                <Label 
+                                    FontSize="Medium"
+                                    Padding="5,0,0,0" 
+                                    VerticalTextAlignment="Center"
+                                    Grid.Column="0" 
+                                    Grid.Row="0"
+                                    Text="{Binding ServerName}">
+                                </Label>
+                                <Label 
+                                    FontSize="Small"
+                                    TextColor="Gray"
+                                    Padding="5,0,0,0" 
+                                    VerticalTextAlignment="Center"
+                                    Grid.Column="0" 
+                                    Grid.Row="1"
+                                    Text="{Binding ServerIP}">
+                                </Label>
+                                <Frame
+                                    Grid.Column="1"
+                                    IsVisible="False">
+                                </Frame>
+                                <ImageButton 
+                                    Margin="10,10,10,0"
+                                    Grid.Column="2" 
+                                    BackgroundColor="#FFFFFF"
+                                    Source="Edit.png"
+                                    WidthRequest="25"
+                                    HeightRequest="25"
+                                    Command="{Binding Edit}">
+                                </ImageButton>
+                                <ImageButton 
+                                    Margin="10,10,10,0"
+                                    Grid.Column="3" 
+                                    BackgroundColor="#FFFFFF"
+                                    Source="Close.png"
+                                    WidthRequest="25"
+                                    HeightRequest="25"
+                                    Command="{Binding Delete}">
+                                </ImageButton>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <ActivityIndicator
+                IsRunning="{Binding IsBusy}" 
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Color="#7DC1E7"
+                WidthRequest="100"
+                HeightRequest="100"
+                Grid.Row="1"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

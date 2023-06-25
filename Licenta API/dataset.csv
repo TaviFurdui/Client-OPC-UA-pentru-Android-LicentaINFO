@@ -1,0 +1,253 @@
+Query,Intent,NodeName,Value
+Can you read the temperature of Node1?,Read,Node1,
+Write 23.4 to the temperature node.,Write,temperature,23.4
+What is the current status of machine Node3?,Read,Node3,
+Set the value of Node2 to 50.,Write,Node2,50
+Read the pressure from the sensor.,Read,sensor,
+Please write 'ON' to the status node.,Write,status node,ON
+Get the value of Node4.,Read,Node4,
+Can you write 'OFF' to the control node?,Write,control node,OFF
+Read the temperature from Node1.,Read,Node1,
+Write 'ON' to the control switch.,Write,control switch,ON
+What is the current level of tank Node3?,Read,Node3,
+Set the pressure of Node2 to 80.,Write,Node2,80
+Get the value from sensor Node4.,Read,Node4,
+Can you write 'OFF' to the alarm status node?,Write,alarm status node,OFF
+Read the speed of motor Node5.,Read,Node5,
+Please write 'HIGH' to the priority node.,Write,priority node,HIGH
+Get the current voltage from Node6.,Read,Node6,
+Can you set the value of Node7 to 0.,Write,Node7,0
+Read the temperature from Sensor1.,Read,Sensor1,
+Write 'ON' to the control switch of Machine2.,Write,Machine2 Control Switch,ON
+What is the current level of Tank3?,Read,Tank3,
+Set the pressure of Pump2 to 80.,Write,Pump2 Pressure,80
+Get the value from Sensor4.,Read,Sensor4,
+Can you write 'OFF' to the alarm status of Device5?,Write,Device5 Alarm Status,OFF
+Read the speed of Motor6.,Read,Motor6 Speed,
+Please write 'HIGH' to the priority of Equipment7.,Write,Equipment7 Priority,HIGH
+Get the current voltage from Power Supply8.,Read,Power Supply8 Voltage,
+Can you set the value of Sensor9 to 0?,Write,Sensor9,
+Retrieve the temperature reading from Node1.,Read,Node1,
+Could you update the control switch to 'ON' for Machine2?,Write,Machine2 Control Switch,ON
+What's the current level in Tank3?,Read,Tank3,
+Adjust the pressure of Pump2 to 80.,Write,Pump2 Pressure,80
+Fetch the data from Sensor4.,Read,Sensor4,
+"Change the alarm status of Device5 to 'OFF', please.",Write,Device5 Alarm Status,OFF
+"Check the speed of Motor6, if you may.",Read,Motor6 Speed,
+I kindly request you to set the priority of Equipment7 to 'HIGH'.,Write,Equipment7 Priority,HIGH
+"Retrieve the voltage value from Power Supply8, please.",Read,Power Supply8 Voltage,
+Can you set Sensor9 to zero?,Write,Sensor9,0
+Give me the temperature reading for Node1.,Read,Node1,
+Please update Machine2's control switch to 'ON'.,Write,Machine2 Control Switch,ON
+Inform me of the current level in Tank3.,Read,Tank3,
+Modify Pump2's pressure to 80.,Write,Pump2 Pressure,80
+Provide the value from Sensor4.,Read,Sensor4,
+Set Device5's alarm status to 'OFF'.,Write,Device5 Alarm Status,OFF
+What's the speed of Motor6?,Read,Motor6 Speed,
+Kindly update Equipment7's priority to 'HIGH'.,Write,Equipment7 Priority,HIGH
+Fetch the current voltage from Power Supply8.,Read,Power Supply8 Voltage,
+Can you zero out Sensor9?,Write,Sensor9,0
+I'd like to know the temperature reading on Node1.,Read,Node1,
+"Retrieve the temperature from Node1, please.",Read,Node1,
+Can you turn on the control switch for Machine2?,Write,Machine2 Control Switch,1
+What's the current level in Tank3 right now?,Read,Tank3,
+"Adjust the pressure of Pump2 to 80.5, please.",Write,Pump2 Pressure,80.5
+Give me the data recorded by Sensor4.,Read,Sensor4,
+Change the alarm status of Device5 to 'OFF'.,Write,Device5 Alarm Status,0
+"Check the current speed of Motor6, if possible.",Read,Motor6 Speed,
+Could you set the priority of Equipment7 to 'HIGH'?,Write,Equipment7 Priority,2
+"Provide the voltage value from Power Supply8, please.",Read,Power Supply8 Voltage,
+Can you set Sensor9 to 0.75?,Write,Sensor9,0.75
+"Retrieve the temperature reading for Node1, please.",Read,Node1,
+Please turn on the control switch for Machine2.,Write,Machine2 Control Switch,1
+"Inform me of the current level in Tank3, if you may.",Read,Tank3,
+"Modify Pump2's pressure to 80.5, please.",Write,Pump2 Pressure,80.5
+Give me the value reported by Sensor4.,Read,Sensor4,
+"Set Device5's alarm status to 'OFF', please.",Write,Device5 Alarm Status,0
+What's the current speed of Motor6?,Read,Motor6 Speed,
+Kindly update Equipment7's priority to 'HIGH'.,Write,Equipment7 Priority,2
+"Fetch the current voltage from Power Supply8, please.",Read,Power Supply8 Voltage,
+"Can you set Sensor9 to 0.75, please?",Write,Sensor9,0.75
+"I'd like to know the temperature on Node1, please.",Read,Node1,
+Get the humidity reading from Node1.,Read,Node1 Humidity,
+Write 'OFF' to the alarm switch of Machine2.,Write,Machine2 Alarm Switch,OFF
+What's the current pressure in Tank3?,Read,Tank3 Pressure,
+Set the flow rate of Pump2 to 100.,Write,Pump2 Flow Rate,100
+Retrieve the status from Sensor4.,Read,Sensor4 Status,
+Change the control mode of Device5 to 'Automatic'.,Write,Device5 Control Mode,Automatic
+Check the rotation speed of Motor6.,Read,Motor6 Rotation Speed,
+Please set the priority of Equipment7 to 'LOW'.,Write,Equipment7 Priority,LOW
+Get the voltage reading from Power Supply8.,Read,Power Supply8 Voltage,
+Can you set Sensor9 to 0.5?,Write,Sensor9,0.5
+Provide the humidity value from Node1.,Read,Node1 Humidity,
+Please turn off the alarm switch for Machine2.,Write,Machine2 Alarm Switch,OFF
+Inform me of the current fill level in Tank3.,Read,Tank3 Fill Level,
+Adjust Pump2's flow rate to 100.5.,Write,Pump2 Flow Rate,100.5
+Give me the status reported by Sensor4.,Read,Sensor4 Status,
+"Set Device5's control mode to 'Manual', please.",Write,Device5 Control Mode,Manual
+What's the rotational speed of Motor6?,Read,Motor6 Rotation Speed,
+Kindly update Equipment7's priority to 'MEDIUM'.,Write,Equipment7 Priority,MEDIUM
+Fetch the voltage value from Power Supply8.,Read,Power Supply8 Voltage,
+"Can you set Sensor9 to 0.5, please?",Write,Sensor9,0.5
+Retrieve the humidity level for Node1.,Read,Node1 Humidity,
+Write 'ON' to the alarm switch of Machine2.,Write,Machine2 Alarm Switch,ON
+What's the current level in Tank3?,Read,Tank3 Level,
+Adjust the flow rate of Pump2 to 99.5.,Write,Pump2 Flow Rate,99.5
+Provide the status from Sensor4.,Read,Sensor4 Status,
+Change Device5's control mode to 'Manual'.,Write,Device5 Control Mode,Manual
+"Check the speed of Motor6, please.",Read,Motor6 Speed,
+Please set Equipment7's priority to 'LOW'.,Write,Equipment7 Priority,LOW
+"Get the voltage value from the Power Supply8, please.",Read,Power Supply8 Voltage,
+Can you set Sensor9 to 0.75?,Write,Sensor9,0.75
+"Retrieve the humidity reading for Node1, please.",Read,Node1 Humidity,
+Please turn on the alarm switch for Machine2.,Write,Machine2 Alarm Switch,ON
+"Inform me of the fill level in Tank3, if you may.",Read,Tank3 Fill Level,
+"Modify Pump2's flow rate to 99.5, please.",Write,Pump2 Flow Rate,99.5
+"Give me the status of Sensor4, please.",Read,Sensor4 Status,
+Set Device5's control mode to 'Automatic'.,Write,Device5 Control Mode,Automatic
+What's the speed of Motor6 currently?,Read,Motor6 Speed,
+Kindly update Equipment7's priority to 'MEDIUM'.,Write,Equipment7 Priority,MEDIUM
+"Fetch the voltage reading from the Power Supply8, please.",Read,Power Supply8 Voltage,
+"Can you set Sensor9 to 0.75, please?",Write,Sensor9,0.75
+"I'd like to know the humidity level on Node1, please.",Read,Node1 Humidity,
+Retrieve the temperature reading from Node1.,Read,Node1 Temperature,
+Write 'ON' to the control switch of Machine2.,Write,Machine2 Control Switch,ON
+What's the current level in Tank3?,Read,Tank3 Level,
+Set the pressure of Pump2 to 80.5.,Write,Pump2 Pressure,80.5
+Get the value from Sensor4.,Read,Sensor4 Value,
+Can you write 'OFF' to the alarm status of Device5?,Write,Device5 Alarm Status,OFF
+Read the speed of Motor6.,Read,Motor6 Speed,
+Please write 'HIGH' to the priority of Equipment7.,Write,Equipment7 Priority,HIGH
+Get the current voltage from Power Supply8.,Read,Power Supply8 Voltage,
+Can you set the value of Sensor9 to 0.75?,Write,Sensor9 Value,0.75
+Read the temperature from Node10.,Read,Node10 Temperature,
+Write 'OFF' to the control switch of Machine11.,Write,Machine11 Control Switch,OFF
+What's the current level in Tank12?,Read,Tank12 Level,
+Set the pressure of Pump13 to 95.5.,Write,Pump13 Pressure,95.5
+Get the value from Sensor14.,Read,Sensor14 Value,
+Can you write 'ON' to the alarm status of Device15?,Write,Device15 Alarm Status,ON
+Read the speed of Motor16.,Read,Motor16 Speed,
+Please write 'MEDIUM' to the priority of Equipment17.,Write,Equipment17 Priority,MEDIUM
+Get the current voltage from Power Supply18.,Read,Power Supply18 Voltage,
+Can you set the value of Sensor19 to 0.5?,Write,Sensor19 Value,0.5
+Read the temperature from Node20.,Read,Node20 Temperature,
+Write 'ON' to the control switch of Machine21.,Write,Machine21 Control Switch,ON
+What's the current level in Tank22?,Read,Tank22 Level,
+Set the pressure of Pump23 to 82.5.,Write,Pump23 Pressure,82.5
+Get the value from Sensor24.,Read,Sensor24 Value,
+Can you write 'OFF' to the alarm status of Device25?,Write,Device25 Alarm Status,OFF
+Read the speed of Motor26.,Read,Motor26 Speed,
+Please write 'LOW' to the priority of Equipment27.,Write,Equipment27 Priority,LOW
+Get the current voltage from Power Supply28.,Read,Power Supply28 Voltage,
+Can you set the value of Sensor29 to 0.25?,Write,Sensor29 Value,0.25
+Read the temperature from Node30.,Read,Node30 Temperature,
+Write 'OFF' to the control switch of Machine31.,Write,Machine31 Control Switch,OFF
+What's the current level in Tank32?,Read,Tank32 Level,
+Set the pressure of Pump33 to 78.5.,Write,Pump33 Pressure,78.5
+Get the value from Sensor34.,Read,Sensor34 Value,
+Can you write 'ON' to the alarm status of Device35?,Write,Device35 Alarm Status,ON
+Read the speed of Motor36.,Read,Motor36 Speed,
+Please write 'HIGH' to the priority of Equipment37.,Write,Equipment37 Priority,HIGH
+Get the current voltage from Power Supply38.,Read,Power Supply38 Voltage,
+Can you set the value of Sensor39 to 0.8?,Write,Sensor39 Value,0.8
+Read the temperature from Node40.,Read,Node40 Temperature,
+Retrieve the temperature reading from SensorA.,Read,SensorA Temperature,
+Write 'ON' to the switch of DeviceX2.,Write,DeviceX2 Switch,ON
+Set the speed of MotorZeta to 1500 RPM.,Write,MotorZeta Speed,1500
+Get the humidity value from HumidifierGamma1.,Read,HumidifierGamma1 Humidity,
+Can you write 'OFF' to the control switch of ValveDelta2?,Write,ValveDelta2 Control Switch,OFF
+Read the level of TankFoxtrot3.,Read,TankFoxtrot3 Level,
+Please set the brightness of LightHotel4 to 80%.,Write,LightHotel4 Brightness,80%
+Get the current voltage from PowerSupplyCharlie1.,Read,PowerSupplyCharlie1 Voltage,
+Can you adjust the position of ServoBravo3 to 45 degrees?,Write,ServoBravo3 Position,45
+Retrieve the temperature reading for SensorEcho2.,Read,SensorEcho2 Temperature,
+Please turn on the switch of DeviceGolf1.,Write,DeviceGolf1 Switch,ON
+Inform me of the current pressure in ChamberIndia2.,Read,ChamberIndia2 Pressure,
+Modify the speed of MotorJuliet1 to 2000 RPM.,Write,MotorJuliet1 Speed,2000
+Give me the humidity value reported by HumidifierKilo2.,Read,HumidifierKilo2 Humidity,
+"Set the control switch of ValveLima1 to 'AUTO', please.",Write,ValveLima1 Control Switch,AUTO
+What's the fill level in TankMike3?,Read,TankMike3 Fill Level,
+Adjust the brightness of LightNovember4 to 60%.,Write,LightNovember4 Brightness,60%
+Retrieve the voltage value from PowerSupplyOscar2.,Read,PowerSupplyOscar2 Voltage,
+Can you set the position of ServoPapa3 to 90 degrees?,Write,ServoPapa3 Position,90
+Read the temperature from SensorQuebec2.,Read,SensorQuebec2 Temperature,
+What is the temperature reading of SensorB?,Read,SensorB Temperature,
+"Turn off DeviceY2, please.",Write,DeviceY2 Switch,OFF
+Adjust the speed of MotorAlpha to 1500 RPM.,Write,MotorAlpha Speed,1500
+Retrieve the humidity level from HumidifierDelta1.,Read,HumidifierDelta1 Humidity,
+Can you set the control switch of ValveEcho2 to 'AUTO'?,Write,ValveEcho2 Control Switch,AUTO
+Check the level of TankGolf3.,Read,TankGolf3 Level,
+Set the brightness of LightHotel5 to 80%.,Write,LightHotel5 Brightness,80%
+Get the current voltage of PowerSupplyCharlie2.,Read,PowerSupplyCharlie2 Voltage,
+"Adjust the position of ServoBravo4 to 45 degrees, please.",Write,ServoBravo4 Position,45
+Provide the temperature reading from SensorEcho3.,Read,SensorEcho3 Temperature,
+Switch on DeviceGolf2.,Write,DeviceGolf2 Switch,ON
+What is the current pressure in ChamberIndia3?,Read,ChamberIndia3 Pressure,
+"Set the speed of MotorJuliet2 to 2000 RPM, please.",Write,MotorJuliet2 Speed,2000
+Retrieve the humidity value from HumidifierKilo3.,Read,HumidifierKilo3 Humidity,
+Turn the control switch of ValveLima2 to 'AUTO'.,Write,ValveLima2 Control Switch,AUTO
+How much is the fill level in TankMike4?,Read,TankMike4 Fill Level,
+Adjust the brightness of LightNovember5 to 60%.,Write,LightNovember5 Brightness,60%
+Get the voltage reading from PowerSupplyOscar3.,Read,PowerSupplyOscar3 Voltage,
+Set ServoPapa4 to a position of 90 degrees.,Write,ServoPapa4 Position,90
+Read the temperature from SensorQuebec3.,Read,SensorQuebec3 Temperature,
+Retrieve the temperature reading from SensorA.,Read,sensorA Temperature,
+Write 'ON' to the switch of DeviceX2.,Write,deviceX2 Switch,ON
+Set the speed of MotorZeta to 1500 RPM.,Write,motorZeta Speed,1500
+Get the humidity value from HumidifierGamma1.,Read,humidifierGamma1 Humidity,
+Can you write 'OFF' to the control switch of ValveDelta2?,Write,valveDelta2 Control Switch,OFF
+Read the level of TankFoxtrot3.,Read,tankFoxtrot3 Level,
+Please set the brightness of LightHotel4 to 80%.,Write,lightHotel4 Brightness,80%
+Get the current voltage from PowerSupplyCharlie1.,Read,powerSupplyCharlie1 Voltage,
+Can you adjust the position of ServoBravo3 to 45 degrees?,Write,servoBravo3 Position,45
+Retrieve the temperature reading for SensorEcho2.,Read,sensorEcho2 Temperature,
+Please turn on the switch of DeviceGolf1.,Write,deviceGolf1 Switch,ON
+Inform me of the current pressure in ChamberIndia2.,Read,chamberIndia2 Pressure,
+Modify the speed of MotorJuliet1 to 2000 RPM.,Write,motorJuliet1 Speed,2000
+Give me the humidity value reported by HumidifierKilo2.,Read,humidifierKilo2 Humidity,
+"Set the control switch of ValveLima1 to 'AUTO', please.",Write,valveLima1 Control Switch,AUTO
+What's the fill level in TankMike3?,Read,tankMike3 Fill Level,
+Adjust the brightness of LightNovember4 to 60%.,Write,lightNovember4 Brightness,60%
+Retrieve the voltage value from PowerSupplyOscar2.,Read,powerSupplyOscar2 Voltage,
+Can you set the position of ServoPapa3 to 90 degrees?,Write,servoPapa3 Position,90
+Read the temperature from SensorQuebec2.,Read,sensorQuebec2 Temperature,
+What is the current temperature of the main office?,Read,Main Office Temperature,
+Please turn off the air conditioning unit in Room 203.,Write,Room 203 Air Conditioning,OFF
+Set the speed of the conveyor belt to 50 meters per minute.,Write,Conveyor Belt Speed,50
+Retrieve the humidity level in the storage room.,Read,Storage Room Humidity,
+Can you activate the sprinkler system in the garden?,Write,Garden Sprinkler System,ON
+Check the pressure in the water supply pipeline.,Read,Water Supply Pipeline Pressure,
+Adjust the brightness of the living room lamp to 80%.,Write,Living Room Lamp Brightness,80%
+Get the voltage reading from the main power source.,Read,Main Power Source Voltage,
+Adjust the position of the robotic arm to 90 degrees.,Write,Robotic Arm Position,90
+Provide the temperature reading from the outdoor sensor.,Read,Outdoor Sensor Temperature,
+Switch on the exhaust fan in the kitchen.,Write,Kitchen Exhaust Fan,ON
+What is the current pressure in the hydraulic system?,Read,Hydraulic System Pressure,
+Set the speed of the motor to 2000 RPM.,Write,Motor Speed,2000
+Retrieve the humidity value from the greenhouse sensor.,Read,Greenhouse Sensor Humidity,
+Please turn on the sprinkler valve in the front yard.,Write,Front Yard Sprinkler Valve,ON
+What is the fill level in the fuel tank?,Read,Fuel Tank Fill Level,
+Adjust the brightness of the bedroom lamp to 60%.,Write,Bedroom Lamp Brightness,60%
+Get the voltage reading from the backup generator.,Read,Backup Generator Voltage,
+Adjust the position of the robotic arm to 180 degrees.,Write,Robotic Arm Position,180
+Provide the temperature reading from the indoor sensor.,Read,Indoor Sensor Temperature,
+Can you tell me the current temperature in the main office?,Read,Main Office Temperature,
+I'd like to turn off the air conditioning in Room 203.,Write,Room 203 Air Conditioning,OFF
+"Set the conveyor belt speed to 50 meters per minute, please.",Write,Conveyor Belt Speed,50
+What's the humidity level in the storage room?,Read,Storage Room Humidity,
+Please activate the sprinkler system in the garden.,Write,Garden Sprinkler System,ON
+"Check the pressure in the water supply pipeline, please.",Read,Water Supply Pipeline Pressure,
+Adjust the brightness of the living room lamp to 80 percent.,Write,Living Room Lamp Brightness,80%
+Get me the voltage reading from the main power source.,Read,Main Power Source Voltage,
+Can you move the robotic arm to an angle of 90 degrees?,Write,Robotic Arm Position,90
+Provide me with the temperature from the outdoor sensor.,Read,Outdoor Sensor Temperature,
+Switch on the exhaust fan in the kitchen area.,Write,Kitchen Exhaust Fan,ON
+What's the current pressure in the hydraulic system?,Read,Hydraulic System Pressure,
+"Adjust the motor speed to 2000 RPM, please.",Write,Motor Speed,2000
+Give me the humidity value recorded by the greenhouse sensor.,Read,Greenhouse Sensor Humidity,
+Kindly turn on the sprinkler valve in the front yard.,Write,Front Yard Sprinkler Valve,ON
+What's the fill level in the fuel tank at the moment?,Read,Fuel Tank Fill Level,
+"Adjust the bedroom lamp brightness to 60 percent, please.",Write,Bedroom Lamp Brightness,60%
+"Retrieve the voltage reading from the backup generator, please.",Read,Backup Generator Voltage,
+Can you position the robotic arm at an angle of 180 degrees?,Write,Robotic Arm Position,180
+"Share the temperature reading from the indoor sensor, please.",Read,Indoor Sensor Temperature,

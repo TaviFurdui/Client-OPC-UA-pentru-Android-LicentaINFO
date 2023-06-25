@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Licenta.ViewModels"
+             x:Class="Licenta.Views.MainPage"
+             BackgroundColor="White">
+    <ContentPage.BindingContext>
+        <viewmodels:MainPageViewModel></viewmodels:MainPageViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid RowDefinitions="auto, auto, *, auto, auto">
+            <Label
+                Grid.Row="0"
+                Margin="0, 80, 0, 0"
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="#7DC1E7"
+                Text="Add new connection"
+                HorizontalOptions="CenterAndExpand" />
+            <Label
+                Grid.Row="1"
+                FontSize="16"
+                FontAttributes="Bold"
+                TextColor="#8D9BA6"
+                Text="Add server IP and give it a name"
+                HorizontalOptions="CenterAndExpand" />
+            <Frame
+                Grid.Row="2"
+                CornerRadius="100"
+                WidthRequest="150"
+                HeightRequest="150"
+                HasShadow="True"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                BackgroundColor="#E9F0F3">
+                <Frame
+                    Grid.Row="2"
+                    CornerRadius="100"
+                    WidthRequest="75"
+                    HeightRequest="75"
+                    HasShadow="True"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#FFFFFF">
+                    <ImageButton 
+                        BackgroundColor="#FFFFFF"
+                        Command="{Binding RedirectToAddNewConnection}">
+                        <ImageButton.Source>
+                            <FontImageSource
+                                Color="#7DC1E7"
+                                Glyph="&#x002b;"
+                                FontFamily="FontAwesome"
+                                Size="44" />
+                        </ImageButton.Source>
+                    </ImageButton>
+                </Frame>
+            </Frame>
+            <Button
+                Grid.Row="3"
+                Text="Select from previous connections"
+                IsVisible="true"
+                BackgroundColor="#7DC1E7"
+                TextColor="#FFFFFF"
+                Margin="50,0,50,50"
+                CornerRadius="50"
+                Command="{Binding RedirectToPreviousConnections}">
+            </Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

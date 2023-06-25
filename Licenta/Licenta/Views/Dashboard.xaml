@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Licenta.ViewModels"
+             x:Class="Licenta.Views.Dashboard"
+             BackgroundColor="White">
+    <ContentPage.BindingContext>
+        <viewmodels:DashboardViewModel></viewmodels:DashboardViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button
+                Command="{Binding ChooseItems}"
+                Text="Select an UI item"
+                CornerRadius="25"
+                TextTransform="None"
+                FontSize="25"
+                FontAttributes="None"
+                TextColor="White"
+                BackgroundColor="#7DC1E7"
+                Margin="10">
+            </Button>
+            <ScrollView>
+                <StackLayout BindableLayout.ItemsSource="{Binding Elements}">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Grid 
+                                    ColumnDefinitions="auto, *, auto, auto, auto">
+                                    <Label 
+                                        Grid.Column="0"
+                                        Text="{Binding Text}"
+                                        FontSize="25"
+                                        HorizontalOptions="Center"
+                                        Margin="20, 0, 20, 0"/>
+                                    <Frame
+                                        Grid.Column="1"
+                                        IsVisible="False">
+                                    </Frame>
+                                    <ImageButton
+                                        Source="Edit.png"
+                                        WidthRequest="35"
+                                        HeightRequest="35"
+                                        Margin="15, 0, 5, 0"
+                                        Grid.Column="2"
+                                        BackgroundColor="White"
+                                        Command="{Binding EditItem}"
+                                        CommandParameter="{Binding Index}">
+                                    </ImageButton>
+                                    <ImageButton
+                                        Source="Close.png"
+                                        WidthRequest="35"
+                                        HeightRequest="35"
+                                        Margin="15, 0, 5, 0"
+                                        Grid.Column="3"
+                                        BackgroundColor="White"
+                                        Command="{Binding DeleteItem}"
+                                        CommandParameter="{Binding Index}">
+                                    </ImageButton>
+                                    <ImageButton
+                                        Source="Info.png"
+                                        WidthRequest="35"
+                                        HeightRequest="35"
+                                        Margin="10, 0, 15, 0"
+                                        Grid.Column="4"
+                                        BackgroundColor="White"
+                                        Command="{Binding InfoItem}"
+                                        CommandParameter="{Binding Index}">
+                                    </ImageButton>
+                                </Grid>
+                                <Image Margin="20" BackgroundColor="White" Source="{Binding Image}"></Image>
+                            </StackLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

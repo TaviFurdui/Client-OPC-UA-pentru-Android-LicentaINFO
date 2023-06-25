@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:licenta="clr-namespace:Licenta.Views"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="White"
+            SelectedTabColor="#7DC1E7"
+            UnselectedTabColor="#8D9BA6"
+            x:Class="Licenta.BottomMenu">
+    <TabbedPage.Resources>
+        
+    </TabbedPage.Resources>
+    <licenta:Connected Title="Home" IconImageSource="Home.png"></licenta:Connected>
+    <licenta:Browse Title="Browse" IconImageSource="Browse.png"></licenta:Browse>
+    <licenta:Monitor Title="Monitor" IconImageSource="Monitor.png"></licenta:Monitor>
+    <licenta:Events Title="Events" IconImageSource="Alarm.png"></licenta:Events>
+    <licenta:Dashboard Title="Dashboard" IconImageSource="Dashboard.png"></licenta:Dashboard>
+</TabbedPage>

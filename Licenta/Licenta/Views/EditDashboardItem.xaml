@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Licenta.ViewModels"
+             x:Class="Licenta.Views.EditDashboardItem">
+    <ContentPage.BindingContext>
+        <viewmodels:EditDashboardItemViewModel></viewmodels:EditDashboardItemViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid RowDefinitions="auto, auto, auto, auto">
+            <Label
+                Grid.Row="0"
+                Margin="0, 80, 0, 0"
+                FontSize="30"
+                FontAttributes="Bold"
+                TextColor="#7DC1E7"
+                Text="Edit dashboard item"
+                HorizontalOptions="CenterAndExpand" />
+            <Label
+                Grid.Row="1"
+                FontSize="15"
+                FontAttributes="Bold"
+                TextColor="#8D9BA6"
+                Text="Select the node you want to add to dashboard, what it's minimum and maximum value should be."
+                HorizontalOptions="CenterAndExpand"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"/>
+            <Grid
+                Margin="50, 100, 50, 0"
+                Grid.Row="2"
+                RowDefinitions="auto, auto, auto, auto, auto">
+                <Label
+                    Grid.Row="0"
+                    FontSize="16"
+                    TextColor="#8D9BA6"
+                    Text="Node Id"/>
+                <Entry
+                    PlaceholderColor="#7DC1E7"
+                    Text="{Binding NodeId}"
+                    Grid.Row="1"
+                    TextColor="#7DC1E7"/>
+                <Label
+                    Margin="0, 20, 0, 0"
+                    Grid.Row="2"
+                    FontSize="16"
+                    TextColor="#8D9BA6"
+                    Text="Minimum value"/>
+                <Entry
+                    PlaceholderColor="#7DC1E7"
+                    Text="{Binding MinValue}"
+                    Grid.Row="3"
+                    TextColor="#7DC1E7"
+                    Keyboard="Numeric"/>
+                <Label
+                    Margin="0, 20, 0, 0"
+                    Grid.Row="4"
+                    FontSize="16"
+                    TextColor="#8D9BA6"
+                    Text="Maximum value"/>
+                <Entry
+                    PlaceholderColor="#7DC1E7"
+                    Text="{Binding MaxValue}"
+                    Grid.Row="5"
+                    TextColor="#7DC1E7"
+                    Keyboard="Numeric"/>
+            </Grid>
+            <FlexLayout
+                Grid.Row="3"
+                Direction="Row"
+                AlignItems="Center"
+                JustifyContent="SpaceEvenly">
+                <Button 
+                    Command="{Binding EditComplete}"
+                    Text="Add"
+                    BackgroundColor="#7DC1E7"
+                    TextColor="#FFFFFF"
+                    CornerRadius="20"
+                    WidthRequest="120"/>
+            </FlexLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:Licenta.ViewModels"
+             x:Class="Licenta.Views.ChatBot">
+    <ContentPage.BindingContext>
+        <viewmodels:ChatBotViewModel></viewmodels:ChatBotViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.9*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <StackLayout>
+                <ScrollView
+                    Grid.Row="0">
+                    <ListView 
+                        ItemsSource="{Binding Messages}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout BackgroundColor="{Binding Color}" Padding="0" Margin="5">
+                                        <Label Text="{Binding Message}"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </ScrollView>
+                <FlexLayout
+                    Direction="Row"
+                    Grid.Row="1">
+                    <Entry
+                        VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="CenterAndExpand" 
+                        WidthRequest="350"
+                        Text="{Binding Query}"/>
+                    <ImageButton
+                        WidthRequest="50"
+                        HeightRequest="50"
+                        Padding="12"
+                        Source="Send.png"
+                        BackgroundColor="#7DC1E7"
+                        CornerRadius="100"
+                        Command="{Binding SendQuery}">
+                    </ImageButton>
+                </FlexLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
